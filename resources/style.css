@@ -2,36 +2,90 @@
     box-sizing:border-box;
     margin: 0px;
     padding:0px;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-
-.images{
-    max-width:150px;
-   
     
 }
+h1{
+    font-family: "Playpen Sans Arabic",sans-serif;
+
+}
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+img{
+   max-width:100%;
+    height:auto;
+    
+}
+
+.images{
+    flex-basis: 200px;
+    flex-grow: 1;
+    min-width: 150px;
+}
+.container{
+    margin:0 auto;
+    max-width: 1100px;
+}
+
 
 header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #B8860B
+    background-color: #B8860B;
+  
+    
 }
+
 .nav-list{
     display:flex;
-    list-style-type: none;
-    gap:10px
+    
+   
+    
 }
-.nav-list a {
+.nav-list ul{
+    flex-basis: auto;
+}
+.nav-list ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px 5px;
+    text-align: center;
+}
+.nav-list  ul a {
     text-decoration: none;
+    color:black;
+    
+}
+.nav-list a:hover{
+    color:white;
+    border-bottom: 5px solid gray;
+}
+.nav-list a:active{
+
+color:black;
+
 }
 .nav-list a::after{
     content:"|"
     
+}
+.personal-info h2{
+    text-align: center;
+}
+.personal-info{
+    min-height:50vh;
+    background-image: url("./1578423042314-Disco-Elysium.webp");
+    background-size: cover;
+    background-position: center;
+    color:#ADFF2F;
+    display:flex;
+    justify-content: space-around;
+}
+
+.text-inside-personal{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
