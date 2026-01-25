@@ -14,13 +14,12 @@ p{
 img{
    max-width:100%;
     height:auto;
+    min-width: 150px;
     
 }
 
 .images{
-    flex-basis: 200px;
-    flex-grow: 1;
-    min-width: 150px;
+    width:150px;
 }
 .container{
     margin:0 auto;
@@ -33,6 +32,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #B8860B;
+    border-bottom:5px solid black;
   
     
 }
@@ -50,7 +50,10 @@ header{
     list-style-type: none;
     display:inline-block;
     padding: 10px 5px;
+    margin: 10px 5px;
     text-align: center;
+    background-color: orange;
+    box-shadow: 5px 5px black;
 }
 .nav-list  ul a {
     text-decoration: none;
@@ -59,17 +62,21 @@ header{
 }
 .nav-list a:hover{
     color:white;
-    border-bottom: 5px solid gray;
+    border-bottom: 5px solid black;
+}
+.nav-list li:active{
+
+
+text-decoration: none;
+background-color: white;
+box-shadow: 0px 0px;
+
 }
 .nav-list a:active{
-
-color:black;
-
+    color:black;
+    border-bottom: 0px solid black;
 }
-.nav-list a::after{
-    content:"|"
-    
-}
+
 .personal-info h2{
     text-align: center;
 }
@@ -87,5 +94,8 @@ color:black;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.image-inside-personal{
+    margin:auto 0 ;
 }
 
