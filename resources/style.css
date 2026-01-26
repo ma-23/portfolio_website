@@ -18,13 +18,14 @@ p{
 img{
    max-width:100%;
     height:auto;
-    min-width: 150px;
+    
     
     
     
 }
 .images{
-    width: 150px;
+    flex-basis: 250px;
+    min-width: 150px;
 }
 
 .container{
@@ -45,6 +46,7 @@ header{
 
 .nav-list{
     display:flex;
+    flex-basis:550px;
     
    
     
@@ -95,6 +97,8 @@ box-shadow: 0px 0px;
     display:flex;
     justify-content: center;
     border-bottom:5px solid black;
+    
+    
    
 }
 
@@ -103,12 +107,17 @@ box-shadow: 0px 0px;
     flex-direction: column;
     justify-content: space-between;
     
+    
+    
 }
 .text-inside-personal h2{
 margin-bottom:20px;
 }
 .image-inside-personal{
-    margin: auto 0;
+flex-basis: 150px;
+flex-grow:1;
+flex-shrink: 0;
+
 }
 
 .felds_of_interest h2{
@@ -123,15 +132,17 @@ text-align: center;
    background-image: url("./Thought\ cabinent.webp");
    background-size: cover;
    background-position: center;
-   padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
    border-bottom: black solid 10px;
 }
+
 
 .grid{
     background-color:#B8860B;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 30px;
     border: 10px solid black;
@@ -139,7 +150,7 @@ text-align: center;
    
 }
 .image{
-    max-width: 300px;
+    width:250px;
 }
 @media only screen and (max-width:425px){
     .felds_of_interest{
@@ -152,7 +163,7 @@ text-align: center;
 }
 .languages-learned {
     min-height: 30vh;
-    background-image: url("./cs.avif");
+    background-image: url("/resources/computer_science_background.jpg");
     background-size: cover;
     background-position: center;
     color:white;
@@ -165,5 +176,12 @@ text-align: center;
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    
    
+}
+.pic{
+    
+   width:150px;
+   height:150px;
+    
 }
