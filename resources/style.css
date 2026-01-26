@@ -8,19 +8,25 @@ h1{
     font-family: "Playpen Sans Arabic",sans-serif;
 
 }
+h2{
+    font-family:"Press Start 2P", 'Arial Narrow', Arial, sans-serif;
+}
 p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:"Press Start 2P", 'Arial Narrow', Arial, sans-serif;
+    line-height:2.5;
 }
 img{
    max-width:100%;
     height:auto;
     min-width: 150px;
     
+    
+    
+}
+.images{
+    width: 150px;
 }
 
-.images{
-    width:150px;
-}
 .container{
     margin:0 auto;
     max-width: 1100px;
@@ -87,15 +93,77 @@ box-shadow: 0px 0px;
     background-position: center;
     color:#ADFF2F;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    border-bottom:5px solid black;
+   
 }
 
 .text-inside-personal{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
+}
+.text-inside-personal h2{
+margin-bottom:20px;
 }
 .image-inside-personal{
-    margin:auto 0 ;
+    margin: auto 0;
 }
 
+.felds_of_interest h2{
+text-align: center;
+}
+
+.felds_of_interest{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  grid-template-rows: 300px;
+   background-image: url("./Thought\ cabinent.webp");
+   background-size: cover;
+   background-position: center;
+   padding: 50px;
+   border-bottom: black solid 10px;
+}
+
+.grid{
+    background-color:#B8860B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    border: 10px solid black;
+    
+   
+}
+.image{
+    max-width: 300px;
+}
+@media only screen and (max-width:425px){
+    .felds_of_interest{
+        grid-template-columns: 1fr;
+    }
+}
+
+#learned-title{
+    text-align: center;
+}
+.languages-learned {
+    min-height: 30vh;
+    background-image: url("./cs.avif");
+    background-size: cover;
+    background-position: center;
+    color:white;
+   
+}
+.languages-learned h2{
+    margin-bottom: 100px;
+}
+.learned{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+   
+}
