@@ -191,6 +191,8 @@ text-align: center;
    justify-content: center;
    align-items: center;
    border-radius:30px;
+   transition: transform 0.5s ease-out;
+   
 
     
 }
@@ -215,4 +217,9 @@ footer p{
     list-style-type: none;
     display:flex;
     gap:10px;
+}
+.pic:hover{
+    background-color: gold;
+    cursor:pointer;
+    transform: translate(0px,-20px);
 }
