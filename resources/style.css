@@ -163,7 +163,7 @@ text-align: center;
 }
 .languages-learned {
     min-height: 50vh;
-    background-image: url("/resources/computer_science_background.jpg");
+    background-image: url("./computer_science_background.jpg");
     background-size: cover;
     background-position: center;
     color:white;
